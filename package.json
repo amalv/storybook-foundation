@@ -1,6 +1,6 @@
 {
   "name": "storybook",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.5",
@@ -23,7 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,6 +47,11 @@
     "@storybook/addon-links": "^5.3.14",
     "@storybook/addons": "^5.3.14",
     "@storybook/preset-create-react-app": "^2.0.0",
-    "@storybook/react": "^5.3.14"
+    "@storybook/react": "^5.3.14",
+    "semantic-release": "^17.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amalv/storybook-foundation.git"
   }
 }
