@@ -25,3 +25,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
+      - uses: amondnet/now-deployment@v2
+        id: deployment_metadata
+        with:
+          github-token: ${{ secrets.GH_TOKEN}}
+          zeit-token: ${{ secrets.ZEIT_TOKEN }}
+          now-org-id: ${{ secrets.NOW_ORG_ID}} #Required
+          now-project-id: ${{ secrets.NOW_PROJECT_ID}} #Required
