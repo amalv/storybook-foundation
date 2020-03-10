@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "now-build": "build-storybook -s public",
+    "now-build": "build-storybook -s public -o build",
     "semantic-release": "semantic-release"
   },
   "eslintConfig": {
