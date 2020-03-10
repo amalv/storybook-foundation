@@ -1,7 +1,7 @@
 {
   "name": "storybook",
   "version": "0.0.0-development",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@testing-library/jest-dom": "^4.2.4",
@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
+    "now-build": "build-storybook -s public",
     "semantic-release": "semantic-release"
   },
   "eslintConfig": {
@@ -42,7 +42,17 @@
       "last 1 safari version"
     ]
   },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
     "@storybook/addon-actions": "^5.3.14",
     "@storybook/addon-docs": "^5.3.14",
     "@storybook/addon-links": "^5.3.14",
