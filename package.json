@@ -2,6 +2,9 @@
   "name": "storybook-foundation",
   "version": "0.0.0-development",
   "private": false,
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
