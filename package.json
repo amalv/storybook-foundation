@@ -2,6 +2,7 @@
   "name": "storybook-foundation",
   "version": "0.0.0-development",
   "private": false,
+  "main": "dist/index.js",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@testing-library/jest-dom": "^4.2.4",
